@@ -1,0 +1,5 @@
+compiler_name = mpifort
+compiler_name_ser = mpifort
+cpp_options = -cpp -D__gfortran -D__parallel -DMPI_REAL=MPI_DOUBLE_PRECISION -DMPI_2REAL=MPI_2DOUBLE_PRECISION -D__fftw -D__netcdf -D__netcdf4 -D__netcdf4_parallel -D__rrtmg -D__fastv8
+compiler_option = -Ofast -ffree-line-length-none -I /cm/shared/uniol/sw/zen4/13.1/netCDF-Fortran/4.6.1-foss-2023a/include -I /cm/shared/uniol/sw/zen4/13.1/FFTW.MPI/3.3.10-gompi-2023a/include -I /cm/shared/uniol/sw/zen4/13.1/PALM/22.12-foss-2023a/rrtmg/include
+linker_options = -Ofast -ffree-line-length-none -lpthread /cm/shared/uniol/sw/zen4/13.1/netCDF-Fortran/4.6.1-foss-2023a/lib/libnetcdff.so /cm/shared/uniol/sw/zen4/13.1/FFTW.MPI/3.3.10-gompi-2023a/lib/libfftw3.so /cm/shared/uniol/sw/zen4/13.1/PALM/22.12-foss-2023a/rrtmg/lib/librrtmg.so

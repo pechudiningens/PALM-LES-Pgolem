@@ -1,0 +1,5 @@
+#!/fs/dss/home/kudo8453/palm/25.04/palm_model_system/palm_venv/bin/python
+
+from f90nml import cli
+
+cli.parse()
